@@ -1,13 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Body from './components/Body/Body'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {
+  const header = <Header/>
+  const body = <Body/>
+  const footer = <Footer/>
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Família Almeida
+          {header}
+          {body}
+          {footer}
         </p>
         <a
           className="App-link"
